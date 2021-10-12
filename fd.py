@@ -3,6 +3,11 @@ from scipy.linalg import svd as scipy_svd
 
 
 class FrequentDirections:
+    """
+    Code from Edo Liberty's github implementing Frequent Directions:
+    http://www.cs.yale.edu/homes/el327/papers/simpleMatrixSketching.pdf
+    Slight change by Era Choshen (rotate when performing get)
+    """
     def __init__(self, d, ell):
         self.d = d
         self.ell = ell
